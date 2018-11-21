@@ -1,0 +1,101 @@
+.frontCard{
+  background: white;
+  z-index: 1000;
+}
+
+h1 {
+  padding-top: 25px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 100;
+  float: left;
+  padding-left: 10%;
+}
+
+p {
+  text-align: left;
+  /* use width to set line length rather than <br> tags */
+  width: 70%;
+  padding-top: 7px;
+  font-family: 'Raleway', sans-serif;
+  z-index: 100;
+  float: left;
+  padding-left: 10%;
+ 
+}
+ul {
+  text-align: left;
+  /* use width to set line length rather than <br> tags */
+  width: 70%;
+  padding-top: ;
+  font-family: 'Raleway', sans-serif;
+  z-index: 100;
+  float: left;
+  padding-left: 15%;
+}
+
+.wrapper {
+width: 300px;
+height: 300px;
+position: relative;
+margin: 40px auto;
+background:whitesmoke;
+
+}
+
+
+
+button {
+  float: right;
+  margin-right: 40%;
+  background-color: #4CAF50;}
+}
+
+.block{
+  display: fixed;
+  color: #000;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.block::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 50px;
+  background: #000;
+  transition: width 5s;
+  z-index: 100;
+}
+
+.block:hover::after {
+  width: 100%;
+  //transition: width .5s;
+  z-index: 100;
+}
+/* inline1 */
+
+.inline{
+  display: relative;
+  color: black;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.inline::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 50px;
+  background: red;
+  transition: width .3s;
+  z-index: 1;
+}
+
+.inline:hover::after {
+  padding-left: 10%;
+  width: 20%;
+  //transition: width .3s;
+  z-index: 1;
+}
+
+
